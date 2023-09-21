@@ -61,7 +61,7 @@
     </section>
 
     <section id="Oradores" class="container text-center">
-      <h6 class="uppercase">Conoce a los</h6>
+      <h6 class="uppercase mb-0">Conoce a los</h6>
       <h2 class="uppercase">Oradores</h2>
       <div class="display-cards">
 
@@ -71,7 +71,7 @@
             <div class="card-body text-start">
               <span class="badge text-bg-warning">JavaScript</span>
               <span class="badge text-bg-info">React</span>
-              <h4>Steve Jobs</h4>
+              <h4 class="mt-3">Steve Jobs</h4>
               <p class="card-textfuente-small">Steve Jobs, icónico líder tecnológico y cofundador de Apple, compartirá su invaluable experiencia en nuestra conferencia, inspirando a estudiantes de carreras tecnológicas hacia la innovación y el éxito.</p>
             </div>
           </div>
@@ -81,7 +81,7 @@
             <div class="card-body text-start">
               <span class="badge text-bg-warning">JavaScript</span>
               <span class="badge text-bg-info">React</span>
-              <h4>Bill Gates</h4>
+              <h4 class="mt-3">Bill Gates</h4>
               <p class="card-text">Bill Gates, visionario en tecnología y filantropo destacado, se unirá a nuestra conferencia para motivar a los estudiantes de carreras tecnológicas con su perspicacia y liderazgo en el mundo digital.</p>
             </div>
           </div>
@@ -91,8 +91,8 @@
             <div class="card-body text-start">
               <span class="badge text-bg-secondary">Negocios</span>
               <span class="badge text-bg-danger">Startups</span>
-              <h4>Ada Lovelace</h4>
-              <p class="card-text">Ada Lovelace, pionera en la programación y visionaria del siglo XIX, honrará nuestra conferencia con su legado revolucionario. Su inspiradora historia inspirará a los estudiantes de carreras tecnológicas a seguir explorando los límites de la innovación.</p>
+              <h4 class="mt-3">Ada Lovelace</h4>
+              <p class="card-text">Ada Lovelace, pionera en la programación, honrará nuestra conferencia con su legado revolucionario. Su historia inspirará a los estudiantes de carreras tecnológicas a seguir explorando los límites de la innovación.</p>
             </div>
           </div>
       </div>
@@ -112,11 +112,11 @@
 
 
   <section id="formularioOrador" class="seccion-formulario container text-center">
-    <h6 class="uppercase">Conviertete en</h6>
+    <h6 class="uppercase mb-0">Conviertete en</h6>
     <h2 class="uppercase">Orador</h2>
 
     <form>
-      <p>Anótate como orador para dar una charla ignite. </br> Cuéntanos de qué quieres hablar!</p>
+      <p>Anótate como orador para dar una <a class="decorated" href="https://es.wikipedia.org/wiki/Lightning_talk">charla ignite</a>. </br> Cuéntanos de qué quieres hablar!</p>
       <div class="row mb-3">
         <div class="col">
           <input type="nombre y apellido" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Juan Perez">
@@ -126,8 +126,8 @@
         </div>
       </div>
       <div class="mb-3">
-        <textarea class="form-control" id="contenido-charla" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
-        <div class="form-text">Recuerda incluír un título para tu charla</div>
+        <textarea class="form-control" id="contenido-charla" rows="6" placeholder="Sobre qué quieres hablar?"></textarea>
+        <div class="form-text text-start">Recuerda incluír un título para tu charla</div>
       </div>
       <button type="submit" class="boton-verde boton-enviar">Enviar</button>
     </form>
