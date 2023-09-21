@@ -3,38 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
   <title>Conferencia Buenos Aires</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
   <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
   
-  <header>
-    <div class="header-logo">
-      <img class=logo src="./Images/codoacodo.png" alt="logo de Codo a Codo"> Conf Bs As
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary header-nav" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="header-logo">
+        <img class=logo src="./Images/codoacodo.png" alt="logo de Codo a Codo"> Conf Bs As
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-0">
+          <li class="nav-item">
+            <li><a href="#">La Conferencia</a></li>
+          </li>
+          <li class="nav-item">
+            <li><a href="#Oradores">Los Oradores</a></li>
+          </li>
+          <li class="nav-item">
+            <li><a href="#Lugar">El lugar y la fecha</a></li>
+          </li>
+          <li class="nav-item">
+            <li><a href="#formularioOrador">Conviértete en orador</a></li>
+          </li>
+          <li class="nav-item">
+            <li><a href="#">Comprar tickets</a></li>
+          </li>
+        </ul>
+      </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">La Conferencia</a></li>
-        <li><a href="#">Los Oradores</a></li>
-        <li><a href="#">El lugar y la fecha</a></li>
-        <li><a href="#">Conviértete en orador</a></li>
-        <li><a href="#">Comprar tickets</a></li>
-      </ul>
-    </nav>
-  </header>
+  </nav>
+</header>
+
+
+
   <main>
     <section class="hero-banner">
-      <img src="./Images/ba1.jpg" alt="Palacio de Aguas y Conferencias">
+      <div class="palacio-conferencia-image">
+      </div>
+      <!-- <img src="./Images/ba1.jpg" alt="Palacio de Aguas y Conferencias"> -->
       <div class="contenido-hero-banner">
         <h1>Conf Bs As</h1>
         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-        <button>Quiero ser orador</button>
-        <button>Comprar tickets</button>
+
+          <a href="#formularioOrador" class="boton-transparente">Quiero ser orador</a>
+          <a href="#formularioOrador" class="boton-verde">Comprar tickets</a>
+
       </div>
     </section>
-    <section></section>
-  </main>
-  <footer></footer>
+
+    <section id="Oradores" class="container text-center">
+      <h6 class="uppercase">Conoce a los</h6>
+      <h2 class="uppercase">Oradores</h2>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./Images/steve.jpg" class="card-img-top" alt="Imagen Steve Jobs">
+            <div class="card-body text-start">
+              <span class="badge text-bg-warning">JavaScript</span>
+              <span class="badge text-bg-info">React</span>
+              <h4>Steve Jobs</h4>
+              <p class="card-textfuente-small">Steve Jobs, icónico líder tecnológico y cofundador de Apple, compartirá su invaluable experiencia en nuestra conferencia, inspirando a estudiantes de carreras tecnológicas hacia la innovación y el éxito.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./Images/bill.jpg" class="card-img-top" alt="Imagen Bill Gates">
+            <div class="card-body text-start">
+              <span class="badge text-bg-warning">JavaScript</span>
+              <span class="badge text-bg-info">React</span>
+              <h4>Bill Gates</h4>
+              <p class="card-text">Bill Gates, visionario en tecnología y filantropo destacado, se unirá a nuestra conferencia para motivar a los estudiantes de carreras tecnológicas con su perspicacia y liderazgo en el mundo digital.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./Images/ada.jpeg" class="card-img-top" alt="Imagen Ada Lovelace">
+            <div class="card-body text-start">
+              <span class="badge text-bg-secondary">Negocios</span>
+              <span class="badge text-bg-danger">Startups</span>
+              <h4>Ada Lovelace</h4>
+              <p class="card-text">Ada Lovelace, pionera en la programación y visionaria del siglo XIX, honrará nuestra conferencia con su legado revolucionario. Su inspiradora historia inspirará a los estudiantes de carreras tecnológicas a seguir explorando los límites de la innovación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<span id="Lugar"></span>
+
+    <section class="presentando-buenos-aires">
+      <div class="buenos-aires-image">
+      </div>
+      <div class="texto-buenos-aires">
+        <h2>Conf Bs As</h2>
+        <p>Buenos Aires, la vibrante capital de Argentina, es el escenario perfecto para nuestra conferencia de tecnología. Esta ciudad cosmopolita combina una rica herencia cultural con un ambiente empresarial en constante crecimiento. Sus calles históricas y su pasión por la innovación hacen de Buenos Aires el lugar ideal para explorar el futuro de la tecnología. ¡Bienvenidos!</p>
+        <button class="boton-transparente">Conoce mas</button>
+      </div>
+    </section>
+
+
+  <section id="formularioOrador" class="seccion-formulario container text-center">
+    <h6 class="uppercase">Conviertete en</h6>
+    <h2 class="uppercase">Orador</h2>
+
+    <form>
+      <p>Anótate como orador para dar una charla ignite. </br> Cuéntanos de qué quieres hablar!</p>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="nombre y apellido" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Juan Perez">
+        </div>
+        <div class="col">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="name@ejemplo.com">
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="contenido-charla" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+        <div class="form-text">Recuerda incluír un título para tu charla</div>
+      </div>
+      <button type="submit" class="boton-verde boton-enviar">Enviar</button>
+    </form>
+
+  </section>
+</main>
+  <footer>
+      <ul>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Prensa</a></li>
+        <li><a href="#">Conferencias</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Estudiantes</a></li>
+      </ul>
+  </footer>
+
+  <script src="./JS/bootstrap.min.js"></script>
 </body>
 </html>
