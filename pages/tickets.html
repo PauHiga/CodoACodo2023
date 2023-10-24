@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  <title>Conferencia Buenos Aires</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary header-nav" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a href="#" class="header-logo">
+        <img class=logo src="../Images/codoacodo.png" alt="logo de Codo a Codo"> Conf Bs As
+      <a/>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-0">
+          <li class="nav-item">
+            <li><a href="../index.html">La Conferencia</a></li>
+          </li>
+          <li class="nav-item">
+            <li><a href="../index.html#Oradores">Los Oradores</a></li>
+          </li>
+          <li class="nav-item">
+            <li><a href="../index.html#Lugar">El lugar y la fecha</a></li>
+          </li>
+          <li class="nav-item">
+            <li><a href="../index.html#formularioOrador">Conviértete en orador</a></li>
+          </li>
+          <li class="nav-item">
+            <li>Comprar tickets</li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <main>
+  <section id="formularioComprarTickets" class="seccion-formulario container text-center">
+    <div class="ticket-categorias-wrap">
+      <div class="ticket-categorias estudiante">
+        <h4>Estudiante</h4>
+        <p>Tienen un descuento</p>
+        <h5>80%</h5>
+        <p>Presentar documentación</p>
+      </div>
+      <div class="ticket-categorias trainee">
+        <h4>Trainee</h4>
+        <p>Tienen un descuento</p>
+        <h5>50%</h5>
+        <p>Presentar documentación</p>
+      </div>
+      <div class="ticket-categorias junior">
+        <h4>Junior</h4>
+        <p>Tienen un descuento</p>
+        <h5>15%</h5>
+        <p>Presentar documentación</p>
+      </div>
+    </div>
+
+    <div class="mt-2">
+      <h6 class="uppercase mb-0 mt-4">Venta</h6>
+      <h2 class="uppercase mb-4">Valor de ticket $200</h2>
+  
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="nombre" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Nombre">
+          </div>
+          <div class="col">
+            <input type="apellido" class="form-control" id="apellido" aria-describedby="apellido" placeholder="Apellido">
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="correo" class="form-control" id="correo" aria-describedby="correo" placeholder="Correo">
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" aria-describedby="cantidad" placeholder="cantidad">
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="categoria">Categoría</label>
+              <select class="form-control" id="categoria">
+                <option>Ninguna</option>
+                <option>Estudiante</option>
+                <option>Trainee</option>
+                <option>Junior</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="total">
+              <p class="m-0" id="totalAPagar">Total a pagar $</p>
+            </div>
+          </div>
+  
+          <div class="row mb-3">
+            <div class="col">
+              <button type="button" id="borrar" class="boton-verde boton-enviar">Borrar</button>
+            </div>
+            <div class="col">
+              <button type="button" id="resumen" class="boton-verde boton-enviar">Resumen</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  
+
+  </section>
+
+
+</main>
+  <footer class="mt-auto">
+      <ul>
+        <li><a href="#">Preguntas frecuentes</a></li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Prensa</a></li>
+        <li><a href="#">Conferencias</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Estudiantes</a></li>
+      </ul>
+  </footer>
+
+  <script src="../JS/bootstrap.min.js"></script>
+  <script src="../JS/tickets.js"></script>
+</body>
+</html>
